@@ -1,11 +1,15 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+   
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.feedback.MainActivity$PlaceholderFragment" >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         android:orientation="vertical" >
     <TextView
         android:gravity="center"
         android:id="@+id/tv_road_directions"
@@ -144,5 +148,14 @@
         android:background="#ef3e3a"
         android:textColor="#FFFFFF"
         android:onClick="submitButtonClicked"/>
-
+    
+    
+    <Button 
+        android:id="@+id/btn_proceed_to_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed To complete"
+        android:onClick="proceedToCompleteClicked"/>
+ 
 </LinearLayout>
+  </ScrollView>
