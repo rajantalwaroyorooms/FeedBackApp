@@ -1,0 +1,47 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="RoadDirections" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/road_direction_rating_bar</item><item name="android:minHeight">50dp</item><item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="CleanlinessAndHygiene" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/cleanliness_rating_bar</item><item name="android:minHeight">50dp</item><item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="InRoomService" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/in_room_service_rating_bar</item><item name="android:minHeight">50dp</item><item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="FoodServed" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_served_rating_bar</item>
+        <item name="android:minHeight">50dp</item><item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="OverAllExperience" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/over_all_experience_rating_bar</item>
+        <item name="android:minHeight">50dp</item><item name="android:maxHeight">50dp</item>
+    </style>
+
+    <style name="StaffAttitude" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/staff_attitude_rating_bar</item>
+        <item name="android:minHeight">50dp</item><item name="android:maxHeight">50dp</item>
+    </style>
+
+</resources>

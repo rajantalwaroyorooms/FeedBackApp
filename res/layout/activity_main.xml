@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.feedback.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_road_directions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ef3e3a"
+        android:textSize="18sp"
+        android:text="@string/road_directions"/>
+
+    <RatingBar
+        android:id="@+id/r_bar_road_directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/RoadDirections"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_cleanliness_and_hygiene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:textColor="#ef3e3a"
+        android:text="@string/cleanliness_and_hygiene" />
+
+    <RatingBar
+        android:id="@+id/r_bar_cleanliness_and_hygiene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CleanlinessAndHygiene"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_in_room_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:textColor="#ef3e3a"
+        android:text="@string/room_service" />
+
+    <RatingBar
+        android:id="@+id/r_bar_in_room_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/InRoomService"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_staff_attitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:textColor="#ef3e3a"
+        android:text="@string/staff_attitude" />
+
+    <RatingBar
+        android:id="@+id/r_bar_staff_attitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/StaffAttitude"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_food_served"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ef3e3a"
+        android:paddingTop="5dp"
+        android:text="@string/food_service" />
+
+    <RatingBar
+        android:id="@+id/r_bar_food_served"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_gravity="center"
+        style="@style/FoodServed"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/tv_overall_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ef3e3a"
+        android:paddingTop="5dp"
+        android:text="OverAll Experience" />
+
+    <RatingBar
+        android:id="@+id/r_bar_overall_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        style="@style/OverAllExperience"
+        android:layout_gravity="center"
+        android:stepSize="1" />
+    
+    <Button 
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/comments"
+        android:onClick="commentButtonOnClick"/>
+    
+    <EditText 
+        android:id="@+id/et_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/comments"
+        android:paddingTop="5dp"
+        android:visibility="gone"/>
+    
+    <Button 
+        android:id="@+id/btn_submitt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/submit"
+        android:background="#ef3e3a"
+        android:textColor="#FFFFFF"
+        android:onClick="submitButtonClicked"/>
+
+</LinearLayout>
